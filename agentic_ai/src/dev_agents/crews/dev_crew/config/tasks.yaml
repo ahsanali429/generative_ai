@@ -1,0 +1,13 @@
+write_code:
+  description: >
+    Write a simple python code for {problem_statement} without typehint.
+  expected_output: >
+    A simple python code for {problem_statement} without typehint.
+  agent: junior_dev
+
+review_code:
+  description: >
+    Review the code of junior_dev and correct it if needed.
+  expected_output: >
+    A corrected python code for {problem_statement} with typehint.
+  agent: senior_dev
