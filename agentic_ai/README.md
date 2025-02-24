@@ -38,4 +38,4 @@ This initializes the **Dev Agentic Crew**, automating code generation and review
 
 ## Support
 
-For help, refer to [crewAI Docs](https://docs.crewai.com) or join the [Discord community](https://discord.com/invite/X4JWnZnxPb).
+For help, refer to [crewAI Docs](https://docs.crewai.com) and [crewAI Flow Docs](https://docs.crewai.com/concepts/flows).
