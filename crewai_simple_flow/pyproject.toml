@@ -1,0 +1,21 @@
+[project]
+name = "crewai-simple-flow"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Ahsan Ali", email = "ahsan.ali429@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "crewai>=0.95.0",
+    "litellm>=1.63.3",
+]
+
+[project.scripts]
+crewai-simple-flow = "crewai_simple_flow:main"
+city_fun_fact_flow = "crewai_simple_flow.main:kickoff"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

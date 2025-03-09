@@ -1,0 +1,21 @@
+[project]
+name = "workflow-langgrpah"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Ahsan Ali", email = "ahsan.ali429@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "langgraph>=0.2.70",
+    "litellm>=1.60.8",
+]
+
+[project.scripts]
+workflow-langgrpah = "workflow_langgrpah:main"
+flow-kickoff = "workflow_langgrpah.simple_flow:run_simple_flow"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

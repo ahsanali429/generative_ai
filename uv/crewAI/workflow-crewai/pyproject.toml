@@ -1,0 +1,21 @@
+[project]
+name = "workflow-crewai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Ahsan Ali", email = "ahsan.ali429@gmail.com" }
+]
+requires-python = ">=3.10.7"
+dependencies = [
+    "crewai>=0.100.1",
+    "litellm>=1.59.8",
+]
+
+[project.scripts]
+workflow-crewai = "workflow_crewai:main"
+flow = "workflow_crewai.simple_flow:run"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

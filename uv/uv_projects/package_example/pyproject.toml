@@ -1,0 +1,17 @@
+[project]
+name = "package-example"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Ahsan Ali", email = "ahsan.ali429@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+kickoff = "package_example:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

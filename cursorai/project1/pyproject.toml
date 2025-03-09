@@ -1,0 +1,20 @@
+[project]
+name = "project1"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Ahsan Ali", email = "ahsan.ali429@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "litellm>=1.61.13",
+]
+
+[project.scripts]
+project1 = "project1:main"
+litellm_strategy = "project1.hello:litellm_strategy"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

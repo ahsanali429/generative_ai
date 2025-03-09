@@ -1,0 +1,17 @@
+[project]
+name = "dev_agents"
+version = "0.1.0"
+description = "dev_agents using crewAI"
+authors = [{ name = "Ahsan Ali", email = "ahsan.ali429@gmail.com" }]
+requires-python = ">=3.10,<=3.13"
+dependencies = [
+    "crewai[tools]>=0.80.0,<1.0.0",
+]
+
+[project.scripts]
+dev-kickoff = "dev_agents.main:kickoff"
+dev-plot = "dev_agents.main:plot"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
