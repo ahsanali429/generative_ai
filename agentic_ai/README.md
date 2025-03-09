@@ -1,56 +1,41 @@
-# {{crew_name}} Crew
+# Dev Agentic Crew
 
-Welcome to the {{crew_name}} Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
+Welcome to **Dev Agentic**, a multi-agent AI system powered by [crewAI](https://crewai.com). This project features two AI agents collaborating on Python development:
+
+- **Junior Dev Agent** → Generates Python code  
+- **Senior Dev Agent** → Reviews, refactors, and applies best practices  
 
 ## Installation
 
-Ensure you have Python >=3.10 <=3.13 installed on your system. This project uses [UV](https://docs.astral.sh/uv/) for dependency management and package handling, offering a seamless setup and execution experience.
-
-First, if you haven't already, install uv:
+Ensure you have **Python >=3.10 <=3.13** installed. Install dependencies using:
 
 ```bash
 pip install uv
-```
-
-Next, navigate to your project directory and install the dependencies:
-
-(Optional) Lock the dependencies and install them by using the CLI command:
-```bash
 crewai install
 ```
 
-### Customizing
+## Customization
 
-**Add your `<MODEL>_API_KEY` into the `.env` file**
-
-- Modify `src/pr2/config/agents.yaml` to define your agents
-- Modify `src/pr2/config/tasks.yaml` to define your tasks
-- Modify `src/pr2/crew.py` to add your own logic, tools and specific args
-- Modify `src/pr2/main.py` to add custom inputs for your agents and tasks
+- Define agents in `src/dev_agentic/config/agents.yaml`  
+- Define tasks in `src/dev_agentic/config/tasks.yaml`  
+- Modify `src/dev_agentic/dev_crew.py` for logic, tools, and configurations  
+- Edit `src/dev_agentic/main.py` for custom inputs  
 
 ## Running the Project
 
-To kickstart your crew of AI agents and begin task execution, run this from the root folder of your project:
+Run the AI agents with:
 
+### From Crew:
 ```bash
 crewai run
 ```
+### From UV:
+```bash
+uv run dev-kickoff
+```
 
-This command initializes the pr2 Crew, assembling the agents and assigning them tasks as defined in your configuration.
-
-This example, unmodified, will run the create a `report.md` file with the output of a research on LLMs in the root folder.
-
-## Understanding Your Crew
-
-The pr2 Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your crew.
+This initializes the **Dev Agentic Crew**, automating code generation and review.
 
 ## Support
 
-For support, questions, or feedback regarding the {{crew_name}} Crew or crewAI.
-
-- Visit our [documentation](https://docs.crewai.com)
-- Reach out to us through our [GitHub repository](https://github.com/joaomdmoura/crewai)
-- [Join our Discord](https://discord.com/invite/X4JWnZnxPb)
-- [Chat with our docs](https://chatg.pt/DWjSBZn)
-
-Let's create wonders together with the power and simplicity of crewAI.
+For help, refer to [crewAI Docs](https://docs.crewai.com) and [crewAI Flow Docs](https://docs.crewai.com/concepts/flows).
