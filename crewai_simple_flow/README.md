@@ -27,14 +27,21 @@ This repository contains a simple CrewAI flow designed to generate a fun fact ab
    ```bash
    pip install -r requirements.txt
    ```
+   <b>OR</b>
+    ```bash
+   uv add litellm
+   ```
+    ```bash
+   uv add crewai
+   ```
 
-3. Configure your environment with API access to an LLM (e.g., OpenAI GPT) and set your API key as an environment variable.
+4. Configure your environment with API access to an LLM (e.g., OpenAI GPT) and set your API key as an environment variable.
 
 ## Usage
 
 Run the script to generate a fun fact and save it as an HTML file:
 ```bash
-python main.py
+uv run city_fun_fact_flow
 ```
 
 - The script will select a random city.
