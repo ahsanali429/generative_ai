@@ -13,8 +13,9 @@ dependencies = [
 ]
 
 [project.scripts]
-crewai-simple-flow = "crewai_simple_flow:main"
-city_fun_fact_flow = "crewai_simple_flow.main:kickoff"
+city_fun_fact_flow_simple_flow = "crewai_simple_flow.simple_flow:kickoff"
+city_fun_fact_flow_with_router = "crewai_simple_flow.router_flow:kickoff"
+city_fun_fact_flow_with_router_plot = "crewai_simple_flow.router_flow:plot"
 
 [build-system]
 requires = ["hatchling"]
