@@ -36,7 +36,7 @@ class CityFunFactFlow(Flow):
     
     @listen(generate_fun_fact)
     def save_fun_fact_in_file(self, fun_fact):
-        with open("fun_fact.html", "w") as file:
+        with open("output.html", "w") as file:
             file.write(fun_fact);
 
 def kickoff():
